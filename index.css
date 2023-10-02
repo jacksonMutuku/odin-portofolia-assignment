@@ -1,0 +1,137 @@
+
+body{
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.icon ,svg{
+    width: 48px;
+    height: 48px;
+}
+.profile-section{
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 10px;
+    grid-template-rows: auto;
+}
+.profile-picture-container{
+    /* background-image: url(image1.jpg); */
+    background-position: center;
+    float: left;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+.about-section{
+    padding-left: 5px;
+    margin-right: 10px;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, .5);
+}
+.project-section{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; 
+    grid-template-rows: 350px 350px; 
+    gap: 40px;
+    background-color:whitesmoke;
+}
+
+.project1{
+    display: grid;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, .5);
+}
+
+.screenshot1{
+    background-color:#22c55e;
+    color: whitesmoke;
+    padding: 10px;
+}
+.screenshot2{
+    background-color:#3b82f6 ;
+    color: whitesmoke;
+    padding: 10px;
+}
+.screenshot3{
+    background-color:#4338ca ;
+    color: whitesmoke;
+    padding: 10px;
+}
+.screenshot4{
+    background-color:#db2777 ;
+    color: whitesmoke;
+    padding: 10px;
+}
+.screenshot5{
+    background-color:orangered;
+    color: whitesmoke;
+    padding: 10px;
+}
+.screenshot6{
+    background-color: #a3e635 ;
+    color: whitesmoke;
+    padding: 10px;
+}
+.project1-details{
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #0ea5e9 ;
+    margin-top:20px;
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+footer p, footer address, footer div.email, footer div.telephone {
+    font-family: 'Lato';
+    color: white;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .profile-picture-container {
+        max-width: 400px;
+        min-height: 400px;
+    }
+    
+    .project-section {
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: auto; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-picture-container {
+        float: none; 
+        text-align: center; 
+    }
+
+    .about-section {
+        margin-right: 0; 
+        margin-top: 20px; 
+    }
+
+    .project-section {
+        grid-template-columns: 1fr; 
+    }
+}
